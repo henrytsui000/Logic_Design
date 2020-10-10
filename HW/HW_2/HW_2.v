@@ -4,7 +4,8 @@ output C;
 reg C;
  
 always @ (A or B) begin
-	C = !(!(A & !(A & B)) & !(!(A & B) & B));
+	C = !((!(A & B )) & !((!(A & A)) & (!(B & B))));
+//	C = !(!(A & B)) & (!( !(A & A) & (!(B & B))));
 end
 
 endmodule
