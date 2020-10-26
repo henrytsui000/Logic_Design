@@ -5,7 +5,7 @@ module bcdadder(A,B,Cin,Bcd,Outc);
     input Cin;
     output [3:0] Bcd;
     output Outc;
-    
+    //trying
     reg [4:0] sum_temp; 
     reg [3:0] Bcd;
     reg Outc;
