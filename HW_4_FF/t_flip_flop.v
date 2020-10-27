@@ -5,7 +5,7 @@ module t_flip_flop();
 
 	reg En,D;
     wire Q;
-    flip_flop ff1(D, En, Q);
+    D_latch ff1(D, En, Q);
 	initial begin
 		$dumpfile("flip_flop.vcd");
 		$dumpvars;
