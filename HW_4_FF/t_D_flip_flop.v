@@ -1,13 +1,12 @@
 `timescale 1ns/10ps
 
-module t_flip_flop();
-
+module t_D_flip_flop();
 
 	reg En,D;
     wire Q;
-    D_latch ff1(D, En, Q);
+    D_flip_flop ff1(D, En, Q);
 	initial begin
-		$dumpfile("flip_flop.vcd");
+		$dumpfile("D_flip_flop.vcd");
 		$dumpvars;
 		
     En = 1'b0;
