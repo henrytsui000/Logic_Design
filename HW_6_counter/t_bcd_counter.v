@@ -1,17 +1,17 @@
 `timescale 1ns/10ps
-module t_binary_counter();
+module t_bcd_counter();
     reg clk;
     wire [4:0] opt;
     reg reset;
-    binary_counter test(clk, opt, reset);
+    bcd_counter test(clk, opt, reset);
     initial begin
-        $dumpfile("binary_counter.vcd");
+        $dumpfile("bcd_counter.vcd");
         $dumpvars;
         clk = 1'b0;
         reset = 1;
         #10
         reset = 0;
-        #60
+        #300
         $finish;
     end
     always begin
