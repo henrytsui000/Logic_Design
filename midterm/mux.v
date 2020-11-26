@@ -1,5 +1,6 @@
 module mux(A, B, select,Q);
-    input A, B, select;
+    input A, B;
+    input select;
     output Q;
     wire not_select, tmp1, tmp2;
     not not1(not_select, select);
