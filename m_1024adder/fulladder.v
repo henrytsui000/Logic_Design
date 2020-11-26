@@ -1,5 +1,5 @@
 `include "adder.v"
-module four_adder(A, B, Cin, sum, Cout);
+module full_adder(A, B, Cin, sum, Cout);
 	input[1023:0]A, B;
 	input Cin;
 	output [1023:0]sum;
