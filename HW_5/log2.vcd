@@ -1,0 +1,41 @@
+$date
+	Sun Nov 15 23:24:20 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module t_HW_5 $end
+$var wire 8 ! out [7:0] $end
+$var reg 8 " in [7:0] $end
+$scope module log2 $end
+$var wire 8 # in [7:0] $end
+$var wire 8 $ out [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5000
+b10 !
+b10 $
+b10 "
+b10 #
+#10000
+b100 !
+b100 $
+b100 "
+b100 #
+#15000
+b111 !
+b111 $
+b111 "
+b111 #
+#20000
