@@ -4,6 +4,7 @@
 module divider(clk, opt, a,rst, ia, ib);
     input clk, rst;//clk是時間 , rst 是一開始要初始化
     output [4:0] opt,a;//這是counter跟餘數
+    //也就是說 opt = 商數, a = 餘數
     wire [4:0] tmp, rst_tmp, amb, tmpa, out_a,tmp2;
     /*
     邏輯是這樣的 我有兩個數字a,ib

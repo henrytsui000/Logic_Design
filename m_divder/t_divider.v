@@ -11,7 +11,7 @@ module t_divider();
         clk = 1'b0;
         reset = 1;
         a = 7;
-        b = 5;
+        b = 3;
         #10
         reset = 0;
         #30000
