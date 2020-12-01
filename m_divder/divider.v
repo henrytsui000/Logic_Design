@@ -1,23 +1,23 @@
 `include "mux.v"
 `include "d_flip_flop.v"
-`include "fulladder.v"
+`include "four_adder.v"
 module divider(clk, opt, rst, ia, ib);
     input clk, rst;
-    output [20:0] opt;
-    wire [20:0] tmp, rst_tmp, a, amb, tmpa, out_a,tmp2;
-    input [20:0] ia, ib;
+    output [4:0] opt;
+    wire [4:0] tmp, rst_tmp, a, amb, tmpa, out_a,tmp2;
+    input [4:0] ia, ib;
     assign amb = a-ib;
-    mux m_tmpa[20:0] (a, amb ,a>ib, out_a);
+    mux m_tmpa[4:0] (a, amb ,a>ib, out_a);
 
-    mux m[20:0](tmp2, 21'b1, rst, tmp);
-    mux m_a[20:0](out_a,ia,  rst, tmpa);
+    mux m[4:0](tmp2, 5'b1, rst, tmp);
+    mux m_a[4:0](out_a,ia,  rst, tmpa);
 
-    mux st[20:0](opt,rst_tmp,a>ib,tmp2);
-    d_flip_flop d[20:0](tmp, clk, opt);
-    d_flip_flop da[20:0](tmpa, clk, a);
+    mux st[4:0](opt,rst_tmp,a>ib,tmp2);
+    d_flip_flop d[4:0](tmp, clk, opt);
+    d_flip_flop da[4:0](tmpa, clk, a);
     wire fuck;
-    wire [20:0]fuck2;
-    four_adder enu(opt, 21'b0, 1'b1, rst_tmp,fuck);
+    wire [4:0]fuck2;
+    four_adder enu(opt, 5'b0, 1'b1, rst_tmp);
     assign fuck2 = opt-1;
 endmodule
 
