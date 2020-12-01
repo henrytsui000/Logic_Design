@@ -1,10 +1,10 @@
 `timescale 1ns/10ps
 module t_divider();
     reg clk;
-    wire [4:0] opt;
+    wire [4:0] opt, low;
     reg reset;
     reg [4:0] a, b;
-    divider test(clk, opt, reset, a, b);
+    divider test(clk, opt, low, reset, a, b);
     initial begin
         $dumpfile("divider.vcd");
         $dumpvars;
