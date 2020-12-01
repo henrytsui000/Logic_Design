@@ -1,11 +1,11 @@
 `include "adder.v"
 module four_adder(A, B, Cin, sum, Cout);
-	input[19:0]A, B;
+	input[20:0]A, B;
 	input Cin;
-	output [19:0]sum;
+	output [20:0]sum;
 	output Cout;
 
-	wire W[20:0];
+	wire W[21:0];
 
 	adder a1(A[0], B[0], Cin, sum[0], W[0]);
 	adder a2(A[1], B[1], W[0], sum[1], W[1]);
@@ -27,7 +27,8 @@ module four_adder(A, B, Cin, sum, Cout);
 	adder a18(A[17], B[17], W[16], sum[17], W[17]);
 	adder a19(A[18], B[18], W[17], sum[18], W[18]);
 	adder a20(A[19], B[19], W[18], sum[19], W[19]);
+	adder a21(A[20], B[20], W[19], sum[20], W[20]);
 
-	assign Cout = W[19];
+	assign Cout = W[20];
 
 endmodule

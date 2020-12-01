@@ -7,8 +7,8 @@ module t_fulladder();
 	initial begin
 		$dumpfile("fulladder.vcd");
 		$dumpvars;
-        A = 1;
-        B = 0;
+        A = 3;
+        B = 8;
 		#100000
 		$finish;
 	end
