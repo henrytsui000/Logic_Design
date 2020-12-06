@@ -6,7 +6,7 @@ Ubuntu:
     
 windows: 
 
-    iverilog.exe -o a .\[name].v .\\[t_name].v
+    iverilog.exe -o a .\[name].v .\[t_name].v
     
 # excute
 
