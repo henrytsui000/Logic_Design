@@ -1,5 +1,5 @@
 $date
-	Wed Nov 25 03:12:35 2020
+	Mon Dec 07 01:29:33 2020
 $end
 $version
 	Icarus Verilog
@@ -8,275 +8,796 @@ $timescale
 	10ps
 $end
 $scope module t_sorting $end
-$var wire 3 ! c_3 [2:0] $end
-$var wire 3 " b_3 [2:0] $end
-$var wire 3 # a_3 [2:0] $end
-$var reg 3 $ a_0 [2:0] $end
-$var reg 3 % b_0 [2:0] $end
-$var reg 3 & c_0 [2:0] $end
+$var wire 4 ! d_4 [3:0] $end
+$var wire 4 " c_4 [3:0] $end
+$var wire 4 # b_4 [3:0] $end
+$var wire 4 $ a_4 [3:0] $end
+$var reg 4 % a_0 [3:0] $end
+$var reg 4 & b_0 [3:0] $end
+$var reg 4 ' c_0 [3:0] $end
+$var reg 4 ( d_0 [3:0] $end
 $scope module test $end
-$var wire 3 ' a_0 [2:0] $end
-$var wire 3 ( a_2 [2:0] $end
-$var wire 3 ) b_0 [2:0] $end
-$var wire 3 * c_0 [2:0] $end
-$var wire 3 + c_1 [2:0] $end
-$var wire 3 , c_3 [2:0] $end
-$var wire 1 - res_bc2 $end
-$var wire 1 . res_ab3 $end
-$var wire 1 / res_ab1 $end
-$var wire 3 0 c_2 [2:0] $end
-$var wire 3 1 b_3 [2:0] $end
-$var wire 3 2 b_2 [2:0] $end
-$var wire 3 3 b_1 [2:0] $end
-$var wire 3 4 a_3 [2:0] $end
-$var wire 3 5 a_1 [2:0] $end
+$var wire 4 ) a_0 [3:0] $end
+$var wire 4 * a_2 [3:0] $end
+$var wire 4 + a_4 [3:0] $end
+$var wire 4 , b_0 [3:0] $end
+$var wire 4 - c_0 [3:0] $end
+$var wire 4 . d_0 [3:0] $end
+$var wire 4 / d_2 [3:0] $end
+$var wire 4 0 d_4 [3:0] $end
+$var wire 1 1 res_cd3 $end
+$var wire 1 2 res_cd1 $end
+$var wire 1 3 res_bc4 $end
+$var wire 1 4 res_bc2 $end
+$var wire 1 5 res_ab3 $end
+$var wire 1 6 res_ab1 $end
+$var wire 4 7 d_3 [3:0] $end
+$var wire 4 8 d_1 [3:0] $end
+$var wire 4 9 c_4 [3:0] $end
+$var wire 4 : c_3 [3:0] $end
+$var wire 4 ; c_2 [3:0] $end
+$var wire 4 < c_1 [3:0] $end
+$var wire 4 = b_4 [3:0] $end
+$var wire 4 > b_3 [3:0] $end
+$var wire 4 ? b_2 [3:0] $end
+$var wire 4 @ b_1 [3:0] $end
+$var wire 4 A a_3 [3:0] $end
+$var wire 4 B a_1 [3:0] $end
 $scope module ab_1 $end
-$var wire 3 6 A [2:0] $end
-$var wire 3 7 B [2:0] $end
-$var wire 1 / Q $end
-$var wire 3 8 state [2:0] $end
-$var wire 3 9 rev_xor [2:0] $end
-$var wire 3 : rev_B [2:0] $end
-$var wire 3 ; bit [2:0] $end
+$var wire 4 C A [3:0] $end
+$var wire 4 D B [3:0] $end
+$var wire 1 6 Q $end
+$var wire 4 E state [3:0] $end
+$var wire 4 F rev_xor [3:0] $end
+$var wire 4 G rev_B [3:0] $end
+$var wire 4 H bit [3:0] $end
 $upscope $end
 $scope module ab_3 $end
-$var wire 3 < A [2:0] $end
-$var wire 3 = B [2:0] $end
-$var wire 1 . Q $end
-$var wire 3 > state [2:0] $end
-$var wire 3 ? rev_xor [2:0] $end
-$var wire 3 @ rev_B [2:0] $end
-$var wire 3 A bit [2:0] $end
+$var wire 4 I A [3:0] $end
+$var wire 4 J B [3:0] $end
+$var wire 1 5 Q $end
+$var wire 4 K state [3:0] $end
+$var wire 4 L rev_xor [3:0] $end
+$var wire 4 M rev_B [3:0] $end
+$var wire 4 N bit [3:0] $end
 $upscope $end
 $scope module bc_2 $end
-$var wire 3 B A [2:0] $end
-$var wire 3 C B [2:0] $end
-$var wire 1 - Q $end
-$var wire 3 D state [2:0] $end
-$var wire 3 E rev_xor [2:0] $end
-$var wire 3 F rev_B [2:0] $end
-$var wire 3 G bit [2:0] $end
+$var wire 4 O A [3:0] $end
+$var wire 4 P B [3:0] $end
+$var wire 1 4 Q $end
+$var wire 4 Q state [3:0] $end
+$var wire 4 R rev_xor [3:0] $end
+$var wire 4 S rev_B [3:0] $end
+$var wire 4 T bit [3:0] $end
 $upscope $end
-$scope module ma_1[0] $end
-$var wire 1 H A $end
-$var wire 1 I B $end
-$var wire 1 J Q $end
-$var wire 1 K not_select $end
-$var wire 1 / select $end
-$var wire 1 L tmp1 $end
-$var wire 1 M tmp2 $end
+$scope module bc_4 $end
+$var wire 4 U A [3:0] $end
+$var wire 4 V B [3:0] $end
+$var wire 1 3 Q $end
+$var wire 4 W state [3:0] $end
+$var wire 4 X rev_xor [3:0] $end
+$var wire 4 Y rev_B [3:0] $end
+$var wire 4 Z bit [3:0] $end
 $upscope $end
-$scope module ma_1[1] $end
-$var wire 1 N A $end
-$var wire 1 O B $end
-$var wire 1 P Q $end
-$var wire 1 Q not_select $end
-$var wire 1 / select $end
-$var wire 1 R tmp1 $end
-$var wire 1 S tmp2 $end
+$scope module cd_1 $end
+$var wire 4 [ A [3:0] $end
+$var wire 4 \ B [3:0] $end
+$var wire 1 2 Q $end
+$var wire 4 ] state [3:0] $end
+$var wire 4 ^ rev_xor [3:0] $end
+$var wire 4 _ rev_B [3:0] $end
+$var wire 4 ` bit [3:0] $end
 $upscope $end
-$scope module ma_1[2] $end
-$var wire 1 T A $end
-$var wire 1 U B $end
-$var wire 1 V Q $end
-$var wire 1 W not_select $end
-$var wire 1 / select $end
-$var wire 1 X tmp1 $end
-$var wire 1 Y tmp2 $end
+$scope module cd_3 $end
+$var wire 4 a A [3:0] $end
+$var wire 4 b B [3:0] $end
+$var wire 1 1 Q $end
+$var wire 4 c state [3:0] $end
+$var wire 4 d rev_xor [3:0] $end
+$var wire 4 e rev_B [3:0] $end
+$var wire 4 f bit [3:0] $end
 $upscope $end
-$scope module ma_3[0] $end
-$var wire 1 Z A $end
-$var wire 1 [ B $end
-$var wire 1 \ Q $end
-$var wire 1 ] not_select $end
-$var wire 1 . select $end
-$var wire 1 ^ tmp1 $end
-$var wire 1 _ tmp2 $end
+$scope module m_a_1[0] $end
+$var wire 1 g A $end
+$var wire 1 h B $end
+$var wire 1 i Q $end
+$var wire 1 j not_select $end
+$var wire 1 6 select $end
+$var wire 1 k tmp1 $end
+$var wire 1 l tmp2 $end
 $upscope $end
-$scope module ma_3[1] $end
-$var wire 1 ` A $end
-$var wire 1 a B $end
-$var wire 1 b Q $end
-$var wire 1 c not_select $end
-$var wire 1 . select $end
-$var wire 1 d tmp1 $end
-$var wire 1 e tmp2 $end
+$scope module m_a_1[1] $end
+$var wire 1 m A $end
+$var wire 1 n B $end
+$var wire 1 o Q $end
+$var wire 1 p not_select $end
+$var wire 1 6 select $end
+$var wire 1 q tmp1 $end
+$var wire 1 r tmp2 $end
 $upscope $end
-$scope module ma_3[2] $end
-$var wire 1 f A $end
-$var wire 1 g B $end
-$var wire 1 h Q $end
-$var wire 1 i not_select $end
-$var wire 1 . select $end
-$var wire 1 j tmp1 $end
-$var wire 1 k tmp2 $end
+$scope module m_a_1[2] $end
+$var wire 1 s A $end
+$var wire 1 t B $end
+$var wire 1 u Q $end
+$var wire 1 v not_select $end
+$var wire 1 6 select $end
+$var wire 1 w tmp1 $end
+$var wire 1 x tmp2 $end
 $upscope $end
-$scope module mb_1[0] $end
-$var wire 1 l A $end
-$var wire 1 m B $end
-$var wire 1 n Q $end
-$var wire 1 o not_select $end
-$var wire 1 / select $end
-$var wire 1 p tmp1 $end
-$var wire 1 q tmp2 $end
+$scope module m_a_1[3] $end
+$var wire 1 y A $end
+$var wire 1 z B $end
+$var wire 1 { Q $end
+$var wire 1 | not_select $end
+$var wire 1 6 select $end
+$var wire 1 } tmp1 $end
+$var wire 1 ~ tmp2 $end
 $upscope $end
-$scope module mb_1[1] $end
-$var wire 1 r A $end
-$var wire 1 s B $end
-$var wire 1 t Q $end
-$var wire 1 u not_select $end
-$var wire 1 / select $end
-$var wire 1 v tmp1 $end
-$var wire 1 w tmp2 $end
+$scope module m_a_3[0] $end
+$var wire 1 !" A $end
+$var wire 1 "" B $end
+$var wire 1 #" Q $end
+$var wire 1 $" not_select $end
+$var wire 1 5 select $end
+$var wire 1 %" tmp1 $end
+$var wire 1 &" tmp2 $end
 $upscope $end
-$scope module mb_1[2] $end
-$var wire 1 x A $end
-$var wire 1 y B $end
-$var wire 1 z Q $end
-$var wire 1 { not_select $end
-$var wire 1 / select $end
-$var wire 1 | tmp1 $end
-$var wire 1 } tmp2 $end
+$scope module m_a_3[1] $end
+$var wire 1 '" A $end
+$var wire 1 (" B $end
+$var wire 1 )" Q $end
+$var wire 1 *" not_select $end
+$var wire 1 5 select $end
+$var wire 1 +" tmp1 $end
+$var wire 1 ," tmp2 $end
 $upscope $end
-$scope module mb_2[0] $end
-$var wire 1 ~ A $end
-$var wire 1 !" B $end
-$var wire 1 "" Q $end
-$var wire 1 #" not_select $end
-$var wire 1 - select $end
-$var wire 1 $" tmp1 $end
-$var wire 1 %" tmp2 $end
+$scope module m_a_3[2] $end
+$var wire 1 -" A $end
+$var wire 1 ." B $end
+$var wire 1 /" Q $end
+$var wire 1 0" not_select $end
+$var wire 1 5 select $end
+$var wire 1 1" tmp1 $end
+$var wire 1 2" tmp2 $end
 $upscope $end
-$scope module mb_2[1] $end
-$var wire 1 &" A $end
-$var wire 1 '" B $end
-$var wire 1 (" Q $end
-$var wire 1 )" not_select $end
-$var wire 1 - select $end
-$var wire 1 *" tmp1 $end
-$var wire 1 +" tmp2 $end
+$scope module m_a_3[3] $end
+$var wire 1 3" A $end
+$var wire 1 4" B $end
+$var wire 1 5" Q $end
+$var wire 1 6" not_select $end
+$var wire 1 5 select $end
+$var wire 1 7" tmp1 $end
+$var wire 1 8" tmp2 $end
 $upscope $end
-$scope module mb_2[2] $end
-$var wire 1 ," A $end
-$var wire 1 -" B $end
-$var wire 1 ." Q $end
-$var wire 1 /" not_select $end
-$var wire 1 - select $end
-$var wire 1 0" tmp1 $end
-$var wire 1 1" tmp2 $end
+$scope module m_b_1[0] $end
+$var wire 1 9" A $end
+$var wire 1 :" B $end
+$var wire 1 ;" Q $end
+$var wire 1 <" not_select $end
+$var wire 1 6 select $end
+$var wire 1 =" tmp1 $end
+$var wire 1 >" tmp2 $end
 $upscope $end
-$scope module mb_3[0] $end
-$var wire 1 2" A $end
-$var wire 1 3" B $end
-$var wire 1 4" Q $end
-$var wire 1 5" not_select $end
-$var wire 1 . select $end
-$var wire 1 6" tmp1 $end
-$var wire 1 7" tmp2 $end
+$scope module m_b_1[1] $end
+$var wire 1 ?" A $end
+$var wire 1 @" B $end
+$var wire 1 A" Q $end
+$var wire 1 B" not_select $end
+$var wire 1 6 select $end
+$var wire 1 C" tmp1 $end
+$var wire 1 D" tmp2 $end
 $upscope $end
-$scope module mb_3[1] $end
-$var wire 1 8" A $end
-$var wire 1 9" B $end
-$var wire 1 :" Q $end
-$var wire 1 ;" not_select $end
-$var wire 1 . select $end
-$var wire 1 <" tmp1 $end
-$var wire 1 =" tmp2 $end
+$scope module m_b_1[2] $end
+$var wire 1 E" A $end
+$var wire 1 F" B $end
+$var wire 1 G" Q $end
+$var wire 1 H" not_select $end
+$var wire 1 6 select $end
+$var wire 1 I" tmp1 $end
+$var wire 1 J" tmp2 $end
 $upscope $end
-$scope module mb_3[2] $end
-$var wire 1 >" A $end
-$var wire 1 ?" B $end
-$var wire 1 @" Q $end
-$var wire 1 A" not_select $end
-$var wire 1 . select $end
-$var wire 1 B" tmp1 $end
-$var wire 1 C" tmp2 $end
+$scope module m_b_1[3] $end
+$var wire 1 K" A $end
+$var wire 1 L" B $end
+$var wire 1 M" Q $end
+$var wire 1 N" not_select $end
+$var wire 1 6 select $end
+$var wire 1 O" tmp1 $end
+$var wire 1 P" tmp2 $end
 $upscope $end
-$scope module mc_2[0] $end
-$var wire 1 D" A $end
-$var wire 1 E" B $end
-$var wire 1 F" Q $end
-$var wire 1 G" not_select $end
-$var wire 1 - select $end
-$var wire 1 H" tmp1 $end
-$var wire 1 I" tmp2 $end
+$scope module m_b_2[0] $end
+$var wire 1 Q" A $end
+$var wire 1 R" B $end
+$var wire 1 S" Q $end
+$var wire 1 T" not_select $end
+$var wire 1 4 select $end
+$var wire 1 U" tmp1 $end
+$var wire 1 V" tmp2 $end
 $upscope $end
-$scope module mc_2[1] $end
-$var wire 1 J" A $end
-$var wire 1 K" B $end
-$var wire 1 L" Q $end
-$var wire 1 M" not_select $end
-$var wire 1 - select $end
-$var wire 1 N" tmp1 $end
-$var wire 1 O" tmp2 $end
+$scope module m_b_2[1] $end
+$var wire 1 W" A $end
+$var wire 1 X" B $end
+$var wire 1 Y" Q $end
+$var wire 1 Z" not_select $end
+$var wire 1 4 select $end
+$var wire 1 [" tmp1 $end
+$var wire 1 \" tmp2 $end
 $upscope $end
-$scope module mc_2[2] $end
-$var wire 1 P" A $end
-$var wire 1 Q" B $end
-$var wire 1 R" Q $end
-$var wire 1 S" not_select $end
-$var wire 1 - select $end
-$var wire 1 T" tmp1 $end
-$var wire 1 U" tmp2 $end
+$scope module m_b_2[2] $end
+$var wire 1 ]" A $end
+$var wire 1 ^" B $end
+$var wire 1 _" Q $end
+$var wire 1 `" not_select $end
+$var wire 1 4 select $end
+$var wire 1 a" tmp1 $end
+$var wire 1 b" tmp2 $end
+$upscope $end
+$scope module m_b_2[3] $end
+$var wire 1 c" A $end
+$var wire 1 d" B $end
+$var wire 1 e" Q $end
+$var wire 1 f" not_select $end
+$var wire 1 4 select $end
+$var wire 1 g" tmp1 $end
+$var wire 1 h" tmp2 $end
+$upscope $end
+$scope module m_b_3[0] $end
+$var wire 1 i" A $end
+$var wire 1 j" B $end
+$var wire 1 k" Q $end
+$var wire 1 l" not_select $end
+$var wire 1 5 select $end
+$var wire 1 m" tmp1 $end
+$var wire 1 n" tmp2 $end
+$upscope $end
+$scope module m_b_3[1] $end
+$var wire 1 o" A $end
+$var wire 1 p" B $end
+$var wire 1 q" Q $end
+$var wire 1 r" not_select $end
+$var wire 1 5 select $end
+$var wire 1 s" tmp1 $end
+$var wire 1 t" tmp2 $end
+$upscope $end
+$scope module m_b_3[2] $end
+$var wire 1 u" A $end
+$var wire 1 v" B $end
+$var wire 1 w" Q $end
+$var wire 1 x" not_select $end
+$var wire 1 5 select $end
+$var wire 1 y" tmp1 $end
+$var wire 1 z" tmp2 $end
+$upscope $end
+$scope module m_b_3[3] $end
+$var wire 1 {" A $end
+$var wire 1 |" B $end
+$var wire 1 }" Q $end
+$var wire 1 ~" not_select $end
+$var wire 1 5 select $end
+$var wire 1 !# tmp1 $end
+$var wire 1 "# tmp2 $end
+$upscope $end
+$scope module m_b_4[0] $end
+$var wire 1 ## A $end
+$var wire 1 $# B $end
+$var wire 1 %# Q $end
+$var wire 1 &# not_select $end
+$var wire 1 3 select $end
+$var wire 1 '# tmp1 $end
+$var wire 1 (# tmp2 $end
+$upscope $end
+$scope module m_b_4[1] $end
+$var wire 1 )# A $end
+$var wire 1 *# B $end
+$var wire 1 +# Q $end
+$var wire 1 ,# not_select $end
+$var wire 1 3 select $end
+$var wire 1 -# tmp1 $end
+$var wire 1 .# tmp2 $end
+$upscope $end
+$scope module m_b_4[2] $end
+$var wire 1 /# A $end
+$var wire 1 0# B $end
+$var wire 1 1# Q $end
+$var wire 1 2# not_select $end
+$var wire 1 3 select $end
+$var wire 1 3# tmp1 $end
+$var wire 1 4# tmp2 $end
+$upscope $end
+$scope module m_b_4[3] $end
+$var wire 1 5# A $end
+$var wire 1 6# B $end
+$var wire 1 7# Q $end
+$var wire 1 8# not_select $end
+$var wire 1 3 select $end
+$var wire 1 9# tmp1 $end
+$var wire 1 :# tmp2 $end
+$upscope $end
+$scope module m_c_1[0] $end
+$var wire 1 ;# A $end
+$var wire 1 <# B $end
+$var wire 1 =# Q $end
+$var wire 1 ># not_select $end
+$var wire 1 2 select $end
+$var wire 1 ?# tmp1 $end
+$var wire 1 @# tmp2 $end
+$upscope $end
+$scope module m_c_1[1] $end
+$var wire 1 A# A $end
+$var wire 1 B# B $end
+$var wire 1 C# Q $end
+$var wire 1 D# not_select $end
+$var wire 1 2 select $end
+$var wire 1 E# tmp1 $end
+$var wire 1 F# tmp2 $end
+$upscope $end
+$scope module m_c_1[2] $end
+$var wire 1 G# A $end
+$var wire 1 H# B $end
+$var wire 1 I# Q $end
+$var wire 1 J# not_select $end
+$var wire 1 2 select $end
+$var wire 1 K# tmp1 $end
+$var wire 1 L# tmp2 $end
+$upscope $end
+$scope module m_c_1[3] $end
+$var wire 1 M# A $end
+$var wire 1 N# B $end
+$var wire 1 O# Q $end
+$var wire 1 P# not_select $end
+$var wire 1 2 select $end
+$var wire 1 Q# tmp1 $end
+$var wire 1 R# tmp2 $end
+$upscope $end
+$scope module m_c_2[0] $end
+$var wire 1 S# A $end
+$var wire 1 T# B $end
+$var wire 1 U# Q $end
+$var wire 1 V# not_select $end
+$var wire 1 4 select $end
+$var wire 1 W# tmp1 $end
+$var wire 1 X# tmp2 $end
+$upscope $end
+$scope module m_c_2[1] $end
+$var wire 1 Y# A $end
+$var wire 1 Z# B $end
+$var wire 1 [# Q $end
+$var wire 1 \# not_select $end
+$var wire 1 4 select $end
+$var wire 1 ]# tmp1 $end
+$var wire 1 ^# tmp2 $end
+$upscope $end
+$scope module m_c_2[2] $end
+$var wire 1 _# A $end
+$var wire 1 `# B $end
+$var wire 1 a# Q $end
+$var wire 1 b# not_select $end
+$var wire 1 4 select $end
+$var wire 1 c# tmp1 $end
+$var wire 1 d# tmp2 $end
+$upscope $end
+$scope module m_c_2[3] $end
+$var wire 1 e# A $end
+$var wire 1 f# B $end
+$var wire 1 g# Q $end
+$var wire 1 h# not_select $end
+$var wire 1 4 select $end
+$var wire 1 i# tmp1 $end
+$var wire 1 j# tmp2 $end
+$upscope $end
+$scope module m_c_3[0] $end
+$var wire 1 k# A $end
+$var wire 1 l# B $end
+$var wire 1 m# Q $end
+$var wire 1 n# not_select $end
+$var wire 1 1 select $end
+$var wire 1 o# tmp1 $end
+$var wire 1 p# tmp2 $end
+$upscope $end
+$scope module m_c_3[1] $end
+$var wire 1 q# A $end
+$var wire 1 r# B $end
+$var wire 1 s# Q $end
+$var wire 1 t# not_select $end
+$var wire 1 1 select $end
+$var wire 1 u# tmp1 $end
+$var wire 1 v# tmp2 $end
+$upscope $end
+$scope module m_c_3[2] $end
+$var wire 1 w# A $end
+$var wire 1 x# B $end
+$var wire 1 y# Q $end
+$var wire 1 z# not_select $end
+$var wire 1 1 select $end
+$var wire 1 {# tmp1 $end
+$var wire 1 |# tmp2 $end
+$upscope $end
+$scope module m_c_3[3] $end
+$var wire 1 }# A $end
+$var wire 1 ~# B $end
+$var wire 1 !$ Q $end
+$var wire 1 "$ not_select $end
+$var wire 1 1 select $end
+$var wire 1 #$ tmp1 $end
+$var wire 1 $$ tmp2 $end
+$upscope $end
+$scope module m_c_4[0] $end
+$var wire 1 %$ A $end
+$var wire 1 &$ B $end
+$var wire 1 '$ Q $end
+$var wire 1 ($ not_select $end
+$var wire 1 3 select $end
+$var wire 1 )$ tmp1 $end
+$var wire 1 *$ tmp2 $end
+$upscope $end
+$scope module m_c_4[1] $end
+$var wire 1 +$ A $end
+$var wire 1 ,$ B $end
+$var wire 1 -$ Q $end
+$var wire 1 .$ not_select $end
+$var wire 1 3 select $end
+$var wire 1 /$ tmp1 $end
+$var wire 1 0$ tmp2 $end
+$upscope $end
+$scope module m_c_4[2] $end
+$var wire 1 1$ A $end
+$var wire 1 2$ B $end
+$var wire 1 3$ Q $end
+$var wire 1 4$ not_select $end
+$var wire 1 3 select $end
+$var wire 1 5$ tmp1 $end
+$var wire 1 6$ tmp2 $end
+$upscope $end
+$scope module m_c_4[3] $end
+$var wire 1 7$ A $end
+$var wire 1 8$ B $end
+$var wire 1 9$ Q $end
+$var wire 1 :$ not_select $end
+$var wire 1 3 select $end
+$var wire 1 ;$ tmp1 $end
+$var wire 1 <$ tmp2 $end
+$upscope $end
+$scope module m_d_1[0] $end
+$var wire 1 =$ A $end
+$var wire 1 >$ B $end
+$var wire 1 ?$ Q $end
+$var wire 1 @$ not_select $end
+$var wire 1 2 select $end
+$var wire 1 A$ tmp1 $end
+$var wire 1 B$ tmp2 $end
+$upscope $end
+$scope module m_d_1[1] $end
+$var wire 1 C$ A $end
+$var wire 1 D$ B $end
+$var wire 1 E$ Q $end
+$var wire 1 F$ not_select $end
+$var wire 1 2 select $end
+$var wire 1 G$ tmp1 $end
+$var wire 1 H$ tmp2 $end
+$upscope $end
+$scope module m_d_1[2] $end
+$var wire 1 I$ A $end
+$var wire 1 J$ B $end
+$var wire 1 K$ Q $end
+$var wire 1 L$ not_select $end
+$var wire 1 2 select $end
+$var wire 1 M$ tmp1 $end
+$var wire 1 N$ tmp2 $end
+$upscope $end
+$scope module m_d_1[3] $end
+$var wire 1 O$ A $end
+$var wire 1 P$ B $end
+$var wire 1 Q$ Q $end
+$var wire 1 R$ not_select $end
+$var wire 1 2 select $end
+$var wire 1 S$ tmp1 $end
+$var wire 1 T$ tmp2 $end
+$upscope $end
+$scope module m_d_3[0] $end
+$var wire 1 U$ A $end
+$var wire 1 V$ B $end
+$var wire 1 W$ Q $end
+$var wire 1 X$ not_select $end
+$var wire 1 1 select $end
+$var wire 1 Y$ tmp1 $end
+$var wire 1 Z$ tmp2 $end
+$upscope $end
+$scope module m_d_3[1] $end
+$var wire 1 [$ A $end
+$var wire 1 \$ B $end
+$var wire 1 ]$ Q $end
+$var wire 1 ^$ not_select $end
+$var wire 1 1 select $end
+$var wire 1 _$ tmp1 $end
+$var wire 1 `$ tmp2 $end
+$upscope $end
+$scope module m_d_3[2] $end
+$var wire 1 a$ A $end
+$var wire 1 b$ B $end
+$var wire 1 c$ Q $end
+$var wire 1 d$ not_select $end
+$var wire 1 1 select $end
+$var wire 1 e$ tmp1 $end
+$var wire 1 f$ tmp2 $end
+$upscope $end
+$scope module m_d_3[3] $end
+$var wire 1 g$ A $end
+$var wire 1 h$ B $end
+$var wire 1 i$ Q $end
+$var wire 1 j$ not_select $end
+$var wire 1 1 select $end
+$var wire 1 k$ tmp1 $end
+$var wire 1 l$ tmp2 $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+0l$
+0k$
+1j$
+0i$
+0h$
+0g$
+0f$
+1e$
+1d$
+1c$
+1b$
+1a$
+0`$
+1_$
+1^$
+1]$
+0\$
+1[$
+0Z$
+0Y$
+1X$
+0W$
+1V$
+0U$
+0T$
+0S$
+1R$
+0Q$
+0P$
+0O$
+0N$
+1M$
+1L$
+1K$
+0J$
+1I$
+0H$
+1G$
+1F$
+1E$
+1D$
+1C$
+0B$
+0A$
+1@$
+0?$
+1>$
+0=$
+0<$
+0;$
+1:$
+09$
+08$
+07$
+06$
+15$
+14$
+13$
+02$
+11$
+00$
+0/$
+1.$
+0-$
+1,$
+0+$
+0*$
+1)$
+1($
+1'$
+1&$
+1%$
+0$$
+0#$
+1"$
+0!$
+0~#
+0}#
+0|#
+1{#
+1z#
+1y#
+1x#
+1w#
+0v#
+0u#
+1t#
+0s#
+1r#
+0q#
+0p#
+1o#
+1n#
+1m#
+0l#
+1k#
+0j#
+0i#
+0h#
+0g#
+0f#
+0e#
+1d#
+0c#
+0b#
+1a#
+1`#
+0_#
+0^#
+0]#
+0\#
+0[#
+0Z#
+1Y#
+1X#
+0W#
+0V#
+1U#
+1T#
+1S#
+0R#
+0Q#
+1P#
+0O#
+0N#
+0M#
+0L#
+0K#
+1J#
+0I#
+1H#
+0G#
+0F#
+1E#
+1D#
+1C#
+1B#
+1A#
+0@#
+1?#
+1>#
+1=#
+0<#
+1;#
+0:#
+09#
+18#
+07#
+06#
+05#
+04#
+03#
+12#
+01#
+10#
+0/#
+0.#
+1-#
+1,#
+1+#
+0*#
+1)#
+0(#
+1'#
+1&#
+1%#
+1$#
+1##
+0"#
+0!#
+1~"
+0}"
+0|"
+0{"
+0z"
+0y"
+1x"
+0w"
+0v"
+0u"
+0t"
+1s"
+1r"
+1q"
+1p"
+1o"
+0n"
+1m"
+1l"
+1k"
+0j"
+1i"
+0h"
+0g"
+0f"
+0e"
+0d"
+0c"
+0b"
+0a"
+0`"
+0_"
+0^"
+1]"
+1\"
+0["
+0Z"
+1Y"
+1X"
+0W"
+1V"
 0U"
 0T"
-0S"
-0R"
-0Q"
+1S"
+1R"
+1Q"
 0P"
-1O"
+0O"
 0N"
 0M"
-1L"
-1K"
-0J"
+0L"
+0K"
+1J"
 0I"
 0H"
-0G"
-0F"
+1G"
+1F"
 0E"
-1D"
+0D"
 0C"
 0B"
-1A"
+0A"
 0@"
-0?"
-0>"
+1?"
+1>"
 0="
 0<"
 1;"
-0:"
+1:"
 09"
 08"
 07"
 16"
-15"
-14"
+05"
+04"
 03"
-12"
+02"
 01"
-00"
+10"
 0/"
 0."
 0-"
 0,"
-0+"
-0*"
-0)"
-0("
-0'"
-1&"
-1%"
-0$"
+1+"
+1*"
+1)"
+1("
+1'"
+0&"
+0%"
+1$"
 0#"
 1""
-1!"
+0!"
 0~
 0}
 0|
@@ -284,92 +805,92 @@ $dumpvars
 0z
 0y
 0x
-1w
+0w
 0v
 0u
-1t
+0t
 1s
-0r
+1r
 0q
 0p
-0o
-0n
+1o
+1n
 0m
 0l
 0k
 0j
-1i
+0i
 0h
-0g
-0f
-0e
-0d
-1c
-0b
-0a
-0`
-0_
-0^
-1]
-0\
-1[
-0Z
-0Y
-0X
-0W
-0V
-0U
-0T
-0S
-0R
-0Q
-0P
-0O
-1N
-0M
-0L
-0K
-0J
-0I
-0H
-b11 G
-b110 F
+1g
+b11 f
+b1001 e
+b1100 d
+b0 c
+b110 b
+b101 a
+b101 `
+b1001 _
+b1010 ^
+b0 ]
+b110 \
+b11 [
+b110 Z
+b1010 Y
+b1001 X
+b0 W
+b101 V
+b11 U
+b110 T
+b1100 S
+b1001 R
+b100 Q
+b11 P
+b101 O
+b1 N
+b1100 M
+b1110 L
+b0 K
+b11 J
+b10 I
+b111 H
+b1101 G
+b1000 F
 b100 E
 b10 D
-b1 C
+b101 C
 b10 B
-b1 A
-b110 @
-b110 ?
-b0 >
-b1 =
-b0 <
-b10 ;
-b111 :
+b10 A
+b101 @
+b11 ?
+b11 >
+b11 =
+b11 <
+b101 ;
+b101 :
 b101 9
-b10 8
-b0 7
-b10 6
-b0 5
-b0 4
-b10 3
-b1 2
-b1 1
-b10 0
-1/
-0.
-1-
+b110 8
+b110 7
+16
+05
+14
+03
+02
+01
+b110 0
+b110 /
+b110 .
+b11 -
 b10 ,
-b1 +
-b1 *
-b0 )
-b0 (
-b10 '
-b1 &
-b0 %
+b10 +
+b10 *
+b101 )
+b110 (
+b11 '
+b10 &
+b101 %
 b10 $
-b0 #
-b1 "
-b10 !
+b11 #
+b101 "
+b110 !
 $end
 #30000

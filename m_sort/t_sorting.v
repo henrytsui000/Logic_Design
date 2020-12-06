@@ -6,10 +6,10 @@ module t_sorting();
 	initial begin
 		$dumpfile("sorting.vcd");
 		$dumpvars;
-		a_0 = ;
-		b_0 = ;
-		c_0 = ;
-		d_0 = ;
+		a_0 = 5;
+		b_0 = 2;
+		c_0 = 3;
+		d_0 = 6;
 		#300
 		$finish;
 	end
