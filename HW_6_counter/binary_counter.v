@@ -4,8 +4,7 @@
 module binary_counter(clk, opt, rst);
     input clk, rst;
     output [4:0] opt;
-    wire [4:0] tmp;
-    wire [4:0] rst_tmp;
+    wire [4:0] tmp, rst_tmp;
     mux m[4:0](rst_tmp, 5'b0, rst, tmp);
     d_flip_flop d[4:0](tmp, clk, opt);
     four_adder enu(opt, 5'b0, 1'b1, rst_tmp);

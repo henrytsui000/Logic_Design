@@ -77,18 +77,12 @@ module d_flip_flop(D, clk, Q);
     d_latch second_latch(Q, tmp, not_clk);
 endmodule
 
-module fuck(in, clk, out);
+module fuck(in, clk, rst, out);
     input in, clk, rst;
     output out;
     wire [3:0] cnt;
     wire [3:0] plcnt, pre_cnt, give_plcnt;
     wire tmp, res;
-    assign rst = 0;
-    initial begin
-        res = 0;
-        tmp = 0;
-        plcnt = 0;
-    end
 
     // assign plcnt = rst || in ? 0 : cnt + 1 == 4 ? 0 : cnt + 1;
     wire RorI;
@@ -99,7 +93,7 @@ module fuck(in, clk, out);
     mux mCPO[3:0](pre_cnt, 4'b0, cp1, give_plcnt);
     mux mplcnt[3:0](give_plcnt, 4'b0, RorI, plcnt);
 
-    // assign tmp = rst ? 1'b0 : (cnt == 0 ? ~out : out);
+    assign tmp = rst ? 1'b0 : (cnt == 0 ? ~out : out);
     wire res_cnt, cnt_equal_zero;
     check_zero check_cnt(cnt, cnt_equal_zero);
     mux m0cnt(out, ~out, cnt_equal_zero, res_cnt);
@@ -118,47 +112,36 @@ module fuck(in, clk, out);
 
 endmodule
 
-`timescale 1ns/1ps
-`define CYCLE_TIME 15.0
-`define SETTING_TIME 200
-`define PATTERN_NUMBER 5
-`define SEED_NUMBER  50
+`timescale 1ns/10ps
+module t_fuck();
+    reg clk,in;
+    wire opt;
+    reg reset;
+    fuck test(in, clk, reset, opt);
+    initial begin
+        $dumpfile("fuck.vcd");
+        $dumpvars;
+        clk = 1'b0;
+        in = 0;
+        reset = 1;
+        #10
+        reset = 0;
+        #90
+        in = 1;
+        #20
+        in = 0;
+        #80
+        #30
+        in = 1;
+        #20
+        in = 0;
+        #80
 
-module PATTERN_TL();
-   wire out;
-   reg 	clk, in_interrupt;
-   
-   integer SEED = `SEED_NUMBER;
-   integer index, delay;
-   
-   real    CYCLE = `CYCLE_TIME;
-   always #(CYCLE/2.0) clk = ~clk;
-   initial clk = 0;
-   
-   fuck fuck1 ( (clk), (in_interrupt), (out));
-   
-   initial begin
-      in_interrupt = 1'd0;
-      #`SETTING_TIME;
-      
-      repeat(2)@(negedge clk);
-
-      for (index = 0; index < `PATTERN_NUMBER; index = index + 1)
-	begin
-	   delay = {$random(SEED)}%200 + `CYCLE_TIME + 1;
-	   #delay;
-	   @(negedge clk);
-	   in_interrupt = 1'd1;
-	   @(negedge clk);
-	   in_interrupt = 1'd0;
-	   @(negedge clk);
-	end
-      #500;
-      $finish;
-   end
-   
-   initial begin
-      $dumpfile("fuck.vcd");
-      $dumpvars;
-   end
+        $finish;
+    end
+    always begin
+        clk = ~clk;
+        #10
+        clk = clk;
+    end
 endmodule
