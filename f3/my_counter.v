@@ -8,7 +8,6 @@ module my_counter(clk, Q_A, Q_B, Q_C, rst);
     not (not_B, Q_B);
     not (not_C, Q_C);
 
-
     wire Ta_1, Ta_2, Ta_3;
     and (Ta_1, Q_B, Q_A, not_C);
     and (Ta_2, Q_C, not_B);
