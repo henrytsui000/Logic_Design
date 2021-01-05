@@ -10,14 +10,13 @@ module t_my_counter();
 		$dumpvars;
         rst = 1;
         En = 1;
+		X_1 = 0;
         #10;
         rst = 0;
 		X_1 = 0;
-		X_2 = 0;
-		#20
+		#300
 		X_1 = 1;
-		X_2 = 1;
-		#40
+		#300
 
 		$finish;
 	end
